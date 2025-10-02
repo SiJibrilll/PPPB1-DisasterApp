@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val list = generateDummy()
+        val list = generateDummy() // buat data dummy bedasarkan bencana
 
         val disasterAdapter = DisasterAdapter(list) { disaster ->
             Toast.makeText(this, "You clicked on ${disaster.nameDisaster}", Toast.LENGTH_SHORT).show()
